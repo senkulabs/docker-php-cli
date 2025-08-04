@@ -9,6 +9,11 @@ on:
 jobs:
   docker-publish:
     runs-on: ubuntu-24.04
+    permissions:
+      contents: read
+      package: write
+      attestations: write
+      id-token: write
     steps:
       - name: Check out code
         uses: actions/checkout@v4
