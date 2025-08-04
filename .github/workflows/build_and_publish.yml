@@ -22,5 +22,5 @@ jobs:
           password: ${{ secrets.GITHUB_TOKEN }}
       - name: Build and Publish
         run: |
-              docker build -t senkulabs/php-cli:8.3 -f 8.3/Dockerfile .
+              docker build -t ghcr.io/senkulabs/php-cli:8.3 -f 8.3/Dockerfile .
               docker push ghcr.io/senkulabs/php-cli:8.3
