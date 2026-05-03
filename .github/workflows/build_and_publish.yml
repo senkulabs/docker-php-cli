@@ -31,3 +31,5 @@ jobs:
           docker push ghcr.io/senkulabs/php:8.3-cli
           docker build -t ghcr.io/senkulabs/php:8.3-cli-bun -f 8.3-cli-bun/Dockerfile .
           docker push ghcr.io/senkulabs/php:8.3-cli-bun
+          docker build -t ghcr.io/senkulabs/php:8.4-cli-bun -f 8.4-cli-bun/Dockerfile .
+          docker push ghcr.io/senkulabs/php:8.4-cli-bun
